@@ -130,7 +130,7 @@ input[type="submit"]:hover {
 
 /* Overlay */
 
-.overlay-container{
+.overlay-container {
 	position: relative;
 }
 
@@ -138,14 +138,13 @@ input[type="submit"]:hover {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-  	right: 0;
+	right: 0;
 	background: rgb(0, 0, 0);
 	background: rgba(0, 0, 0, 0.5); /* Black see-through */
 	overflow: hidden;
 	width: auto;
 	transition: 0.5s ease;
 	height: 0;
-
 }
 
 .overlay-container:hover .overlay {
@@ -184,9 +183,9 @@ input[type="submit"]:hover {
 }
 
 @media (min-width: 900px) {
-	.overlay-text{
+	.overlay-text {
 		white-space: nowrap;
-	font-size: 15px;
+		font-size: 15px;
 	}
 
 	.overlay-container:hover .overlay {

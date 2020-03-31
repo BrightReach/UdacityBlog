@@ -1,73 +1,70 @@
 /* Mobile first grid */
 
-#page-grid{
-    display: grid;
-    grid-template: repeat(4, auto) / auto ;
-    grid-template-areas: 
-    "header"
-    "menu"
-    "main"
-    "footer";
-    align-content: center;
-    justify-content: center;
+#page-grid {
+	display: grid;
+	grid-template: repeat(4, auto) / auto;
+	grid-template-areas:
+		"header"
+		"menu"
+		"main"
+		"footer";
+	align-content: center;
+	justify-content: center;
 }
 
-#blog-grid{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-auto-rows: auto;
-    gap: 15px;
-    padding: 10px;
-  
+#blog-grid {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-auto-rows: auto;
+	gap: 15px;
+	padding: 10px;
 }
 
-#relate-grid{
-    display: grid;
-        grid-template-columns: 100%;
-        grid-auto-rows: auto;
-        gap: 15px;
-        padding: 10px;
+#relate-grid {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-auto-rows: auto;
+	gap: 15px;
+	padding: 10px;
 }
 
 /* Tablet Viewing */
 
 @media (min-width: 600px) {
-    #blog-grid{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: auto;
-        gap: 15px;
-        padding: 10px;
-    }
+	#blog-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-auto-rows: auto;
+		gap: 15px;
+		padding: 10px;
+	}
 
-    #relate-grid{
-        display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-auto-rows: auto;
-            gap: 15px;
-            padding: 10px;
-    }
+	#relate-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-auto-rows: auto;
+		gap: 15px;
+		padding: 10px;
+	}
 
-    #page-grid{
-        display: grid;
-        grid-template: auto minmax(900px, auto) 50px / repeat(3, 1fr) 50% 1fr;
-        grid-template-areas: 
-        "header header header header header header header header"
-        "menu menu main main main main main main"
-        "footer footer footer footer footer footer footer footer";
-    }
+	#page-grid {
+		display: grid;
+		grid-template: auto minmax(900px, auto) 50px / repeat(3, 1fr) 50% 1fr;
+		grid-template-areas:
+			"header header header header header header header header"
+			"menu menu main main main main main main"
+			"footer footer footer footer footer footer footer footer";
+	}
 }
 
 /* Desktop Viewing */
 
 @media (min-width: 900px) {
-
-    #blog-grid{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: auto;
-        gap: 15px;
-        padding: 10px;
-      
-    }
+	#blog-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-auto-rows: auto;
+		gap: 15px;
+		padding: 10px;
+	}
 }
