@@ -106,6 +106,7 @@ input[type="submit"]:hover {
 }
 
 .img {
+	display: block;
 	max-width: 100%;
 	height: auto;
 	margin: 20px auto;
@@ -127,9 +128,47 @@ input[type="submit"]:hover {
 	top: 20px;
 }
 
+/* Overlay */
+
+.overlay-container{
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+  	right: 0;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	overflow: hidden;
+	width: auto;
+	transition: 0.5s ease;
+	height: 0;
+
+}
+
+.overlay-container:hover .overlay {
+	height: 30%;
+}
+
+.overlay-text {
+	white-space: pre-wrap;
+	color: white;
+	font-size: 15px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	margin: auto;
+}
+
 @media (min-width: 600px) {
 	.img {
-		max-width: 30%;
+		max-width: 50%;
 		height: auto;
 	}
 
@@ -141,5 +180,16 @@ input[type="submit"]:hover {
 		display: flex;
 		justify-content: space-between;
 		align-content: center;
+	}
+}
+
+@media (min-width: 900px) {
+	.overlay-text{
+		white-space: nowrap;
+	font-size: 15px;
+	}
+
+	.overlay-container:hover .overlay {
+		height: 15%;
 	}
 }

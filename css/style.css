@@ -14,6 +14,30 @@ h3 {
   font-family: "Special Elite", cursive;
 }
 
+b{
+  font-weight: 700;
+}
+
+u{
+  text-decoration: underline solid inherit;
+}
+
+em{
+  font-style: italic;
+}
+
+q {
+  display: inline;
+}
+ 
+q:before {
+  content: open-quote;
+}
+ 
+q:after {
+  content: close-quote;
+}
+
 a,
 a:visited {
   transition: 0.3s;
@@ -67,6 +91,7 @@ a:hover {
   max-width: 100%;
   height: auto;
   border-radius: 5px 5px 0 0;
+  display: block;
 }
 
 .card-content {
